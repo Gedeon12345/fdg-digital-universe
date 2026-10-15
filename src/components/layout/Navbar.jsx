@@ -6,6 +6,7 @@ import { useActiveSection } from '../../hooks/useActiveSection'
 import Button from '../ui/Button'
 import Logo from './Logo'
 import MobileMenu from './MobileMenu'
+import ThemeToggle from '../ui/ThemeToggle'
 
 const ids = navItems.map((item) => item.id)
 
@@ -47,7 +48,8 @@ export default function Navbar() {
               <Button variant="outline" size="sm" href={site.cvUrl} download className="hidden lg:inline-flex">
                 Télécharger le CV
               </Button>
-            )}
+            )}  
+            <ThemeToggle />
             <button
               ref={toggleRef}
               type="button"

@@ -160,7 +160,7 @@ export default function ContactForm({ endpoint }) {
 
       <Button type="submit" disabled={sending} className="self-start disabled:cursor-not-allowed disabled:opacity-60">
         {sending && (
-          <span aria-hidden="true" className="size-4 rounded-full border-2 border-void/40 border-t-void motion-safe:animate-spin" />
+          <span aria-hidden="true" className="size-4 rounded-full border-2 border-on-orange/40 border-t-on-orange motion-safe:animate-spin" />
         )}
         {sending ? 'Envoi en cours…' : 'Envoyer le message'}
       </Button>

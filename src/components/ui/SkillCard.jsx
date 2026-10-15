@@ -11,7 +11,7 @@ export default function SkillCard({ title, icon: Icon, items }) {
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(260px_circle_at_var(--x,50%)_var(--y,50%),rgb(255_121_0/0.12),transparent_70%)] opacity-0 transition-opacity duration-300 group-hover:opacity-100"
       />
       <div className="relative flex items-center gap-3.5">
-        <span className="flex size-10 items-center justify-center rounded-md border border-orange text-orange transition-colors group-hover:bg-orange group-hover:text-void">
+        <span className="flex size-10 items-center justify-center rounded-md border border-orange text-orange transition-colors group-hover:bg-orange group-hover:text-on-orange">
           <Icon size={20} aria-hidden="true" />
         </span>
         <h3 className="font-display text-xl font-bold">{title}</h3>

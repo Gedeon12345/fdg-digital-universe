@@ -6,6 +6,7 @@
   --color-surface: #10141b;
   --color-orange: #ff7900;
   --color-orange-soft: #ff9d2e;
+  --color-on-orange: #050505;
   --color-text: #f5f7fa;
   --color-muted: #a7afbd;
   --color-line: #252b35;
@@ -15,6 +16,31 @@
   --font-display: "Space Grotesk Variable", sans-serif;
   --font-sans: "Inter Variable", system-ui, sans-serif;
   --font-mono: "JetBrains Mono Variable", ui-monospace, monospace;
+}
+
+:root {
+  color-scheme: dark;
+  --planet-a: #1a2028;
+  --planet-b: #050505;
+  --glow-opacity: 0.22;
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+  --color-void: #f6f7f9;
+  --color-night: #eceef2;
+  --color-surface: #ffffff;
+  --color-orange: #be3d0b;
+  --color-orange-soft: #a24b07;
+  --color-on-orange: #ffffff;
+  --color-text: #0b0f17;
+  --color-muted: #4b5563;
+  --color-line: #d5d9e0;
+  --color-ok: #15803d;
+  --color-danger: #b42318;
+  --planet-a: #ffffff;
+  --planet-b: #dde1e8;
+  --glow-opacity: 0.14;
 }
 
 @layer base {

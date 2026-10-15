@@ -6,10 +6,25 @@
     <link rel="canonical" href="https://fdg-digital-universe.vercel.app/" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <meta name="description" content="Découvrez le portfolio de Gédéon Foba Deffo, développeur web et mobile spécialisé dans la création d’applications modernes et de solutions numériques." />
     <meta name="theme-color" content="#050505" />
+
+    <script>
+      (function () {
+        var theme = 'dark';
+        try { if (localStorage.getItem('fdg-theme') === 'light') theme = 'light'; } catch (e) {}
+        document.documentElement.setAttribute('data-theme', theme);
+        if (theme === 'light') document.querySelector('meta[name="theme-color"]').setAttribute('content', '#f6f7f9');
+      })();
+    </script>
 
     <meta property="og:type" content="website" />
   <meta property="og:locale" content="fr_FR" />

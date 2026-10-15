@@ -12,7 +12,7 @@ export default function App() {
     <>
       <a
         href="#accueil"
-        className="sr-only z-50 rounded-md bg-orange px-4 py-2 font-medium text-void focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
+        className="sr-only z-50 rounded-md bg-orange px-4 py-2 font-medium text-on-orange focus:not-sr-only focus:fixed focus:left-4 focus:top-4"
       >
         Aller au contenu
       </a>

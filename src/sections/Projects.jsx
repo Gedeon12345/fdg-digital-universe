@@ -32,7 +32,7 @@ export default function Projects() {
               onClick={() => setActive(id)}
               className={`min-h-11 rounded-md border px-4 text-sm font-medium transition-colors ${
                 active === id
-                  ? 'border-orange bg-orange text-void'
+                  ? 'border-orange bg-orange text-on-orange'
                   : 'border-line text-muted hover:border-orange hover:text-text'
               }`}
             >
