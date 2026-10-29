@@ -44,11 +44,13 @@ export default function Navbar() {
           </nav>
 
           <div className="flex items-center gap-3">
-            {site.cvUrl && (
-              <Button variant="outline" size="sm" href={site.cvUrl} download className="hidden lg:inline-flex">
+          {site.cvUrl && (
+            <div className="hidden lg:block">
+              <Button variant="outline" size="sm" href={site.cvUrl} download>
                 Télécharger le CV
               </Button>
-            )}  
+            </div>
+          )}
             <ThemeToggle />
             <button
               ref={toggleRef}
