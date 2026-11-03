@@ -43,6 +43,10 @@ for (const step of journey) {
 
 if (/REMPLACER/.test(readFileSync('index.html', 'utf8'))) errors.push('index.html contient encore un texte « REMPLACER ».')
 
+const endpoint = site.contact?.formEndpoint
+if (!endpoint) warnings.push('formEndpoint vide : formulaire inactif, carte e-mail utilisée à la place.')
+else if (!/^https:\/\/formspree\.io\/f\/[A-Za-z0-9]+$/.test(endpoint)) errors.push(`formEndpoint invalide : ${endpoint}`)
+
 warnings.forEach((w) => console.log(`[avertissement] ${w}`))
 errors.forEach((e) => console.log(`[erreur] ${e}`))
 console.log(`\n${errors.length} erreur(s), ${warnings.length} avertissement(s).`)

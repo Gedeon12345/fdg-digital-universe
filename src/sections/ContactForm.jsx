@@ -164,6 +164,9 @@ export default function ContactForm({ endpoint }) {
         )}
         {sending ? 'Envoi en cours…' : 'Envoyer le message'}
       </Button>
+      <p className="text-xs leading-relaxed text-muted">
+        Les informations saisies servent uniquement à vous répondre. L’envoi est assuré par le service Formspree.
+      </p>
     </form>
   )
 }

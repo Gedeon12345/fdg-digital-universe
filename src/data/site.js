@@ -25,7 +25,7 @@ export const site = {
       linkedin: 'https://www.linkedin.com/in/gedeon-foba-deffo-a64356403',
       email: 'fobadeffo@gmail.com',
     },    
-    contact: { formEndpoint: '' }, // URL Formspree à fournir, ex. 'https://formspree.io/f/xxxxxxxx'                                  // À FOURNIR
+    contact: { formEndpoint: 'https://formspree.io/f/myeebryo' }, // URL Formspree à fournir, ex. 'https://formspree.io/f/xxxxxxxx'                                  // À FOURNIR
     cvUrl: '/cv-gedeon-foba-deffo.pdf',                                                                         // À FOURNIR (ex. '/cv-gedeon-foba-deffo.pdf')
   }
   
